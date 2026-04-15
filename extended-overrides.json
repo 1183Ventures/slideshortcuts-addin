@@ -37,29 +37,29 @@
     {
       "action": "swapObjects",
       "key": {
-        "default": "Ctrl+Shift+5",
-        "mac": "Ctrl+Shift+5"
+        "default": "Ctrl+Alt+5",
+        "mac": "Ctrl+Alt+5"
       }
     },
     {
       "action": "selectSimilar",
       "key": {
-        "default": "Ctrl+Shift+6",
-        "mac": "Ctrl+Shift+6"
+        "default": "Ctrl+Alt+6",
+        "mac": "Ctrl+Alt+6"
       }
     },
     {
       "action": "groupVertical",
       "key": {
-        "default": "Ctrl+Shift+7",
-        "mac": "Ctrl+Shift+7"
+        "default": "Ctrl+Alt+7",
+        "mac": "Ctrl+Alt+7"
       }
     },
     {
       "action": "groupHorizontal",
       "key": {
-        "default": "Ctrl+Shift+8",
-        "mac": "Ctrl+Shift+8"
+        "default": "Ctrl+Alt+8",
+        "mac": "Ctrl+Alt+8"
       }
     }
   ]
