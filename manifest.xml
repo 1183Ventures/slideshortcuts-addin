@@ -11,8 +11,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="SlideShortcuts"/>
   <Description DefaultValue="PowerPoint shortcuts for alignment, formatting, and object manipulation."/>
-  <IconUrl DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_80.png"/>
+  <IconUrl DefaultValue="https://localhost:3000/assets/insert_symbol_32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/insert_symbol_80.png"/>
   <SupportUrl DefaultValue="https://slideshortcuts.com"/>
 
   <Hosts>
@@ -20,7 +20,7 @@
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html"/>
+    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>
@@ -272,59 +272,59 @@
     <Resources>
       <bt:Images>
         <!-- Symbol -->
-        <bt:Image id="Icon.Symbol.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_16.png"/>
-        <bt:Image id="Icon.Symbol.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_32.png"/>
-        <bt:Image id="Icon.Symbol.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_80.png"/>
+        <bt:Image id="Icon.Symbol.16" DefaultValue="https://localhost:3000/assets/insert_symbol_16.png"/>
+        <bt:Image id="Icon.Symbol.32" DefaultValue="https://localhost:3000/assets/insert_symbol_32.png"/>
+        <bt:Image id="Icon.Symbol.80" DefaultValue="https://localhost:3000/assets/insert_symbol_80.png"/>
         <!-- Line -->
-        <bt:Image id="Icon.Line.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_line_16.png"/>
-        <bt:Image id="Icon.Line.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_line_32.png"/>
-        <bt:Image id="Icon.Line.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_line_80.png"/>
+        <bt:Image id="Icon.Line.16" DefaultValue="https://localhost:3000/assets/insert_line_16.png"/>
+        <bt:Image id="Icon.Line.32" DefaultValue="https://localhost:3000/assets/insert_line_32.png"/>
+        <bt:Image id="Icon.Line.80" DefaultValue="https://localhost:3000/assets/insert_line_80.png"/>
         <!-- Icon -->
-        <bt:Image id="Icon.Icon.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_icon_16.png"/>
-        <bt:Image id="Icon.Icon.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_icon_32.png"/>
-        <bt:Image id="Icon.Icon.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_icon_80.png"/>
+        <bt:Image id="Icon.Icon.16" DefaultValue="https://localhost:3000/assets/insert_icon_16.png"/>
+        <bt:Image id="Icon.Icon.32" DefaultValue="https://localhost:3000/assets/insert_icon_32.png"/>
+        <bt:Image id="Icon.Icon.80" DefaultValue="https://localhost:3000/assets/insert_icon_80.png"/>
         <!-- Table -->
-        <bt:Image id="Icon.Table.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/textbox_table_16.png"/>
-        <bt:Image id="Icon.Table.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/textbox_table_32.png"/>
-        <bt:Image id="Icon.Table.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/textbox_table_80.png"/>
+        <bt:Image id="Icon.Table.16" DefaultValue="https://localhost:3000/assets/textbox_table_16.png"/>
+        <bt:Image id="Icon.Table.32" DefaultValue="https://localhost:3000/assets/textbox_table_32.png"/>
+        <bt:Image id="Icon.Table.80" DefaultValue="https://localhost:3000/assets/textbox_table_80.png"/>
         <!-- Dots -->
-        <bt:Image id="Icon.Dots.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/convert_dots_16.png"/>
-        <bt:Image id="Icon.Dots.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/convert_dots_32.png"/>
-        <bt:Image id="Icon.Dots.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/convert_dots_80.png"/>
+        <bt:Image id="Icon.Dots.16" DefaultValue="https://localhost:3000/assets/convert_dots_16.png"/>
+        <bt:Image id="Icon.Dots.32" DefaultValue="https://localhost:3000/assets/convert_dots_32.png"/>
+        <bt:Image id="Icon.Dots.80" DefaultValue="https://localhost:3000/assets/convert_dots_80.png"/>
         <!-- Similar -->
-        <bt:Image id="Icon.Similar.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/select_similar_16.png"/>
-        <bt:Image id="Icon.Similar.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/select_similar_32.png"/>
-        <bt:Image id="Icon.Similar.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/select_similar_80.png"/>
+        <bt:Image id="Icon.Similar.16" DefaultValue="https://localhost:3000/assets/select_similar_16.png"/>
+        <bt:Image id="Icon.Similar.32" DefaultValue="https://localhost:3000/assets/select_similar_32.png"/>
+        <bt:Image id="Icon.Similar.80" DefaultValue="https://localhost:3000/assets/select_similar_80.png"/>
         <!-- Swap -->
-        <bt:Image id="Icon.Swap.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/swap_objects_16.png"/>
-        <bt:Image id="Icon.Swap.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/swap_objects_32.png"/>
-        <bt:Image id="Icon.Swap.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/swap_objects_80.png"/>
+        <bt:Image id="Icon.Swap.16" DefaultValue="https://localhost:3000/assets/swap_objects_16.png"/>
+        <bt:Image id="Icon.Swap.32" DefaultValue="https://localhost:3000/assets/swap_objects_32.png"/>
+        <bt:Image id="Icon.Swap.80" DefaultValue="https://localhost:3000/assets/swap_objects_80.png"/>
         <!-- Group Horizontal -->
-        <bt:Image id="Icon.GroupH.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_horizontal_16.png"/>
-        <bt:Image id="Icon.GroupH.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_horizontal_32.png"/>
-        <bt:Image id="Icon.GroupH.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_horizontal_80.png"/>
+        <bt:Image id="Icon.GroupH.16" DefaultValue="https://localhost:3000/assets/group_horizontal_16.png"/>
+        <bt:Image id="Icon.GroupH.32" DefaultValue="https://localhost:3000/assets/group_horizontal_32.png"/>
+        <bt:Image id="Icon.GroupH.80" DefaultValue="https://localhost:3000/assets/group_horizontal_80.png"/>
         <!-- Group Vertical -->
-        <bt:Image id="Icon.GroupV.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_vertical_16.png"/>
-        <bt:Image id="Icon.GroupV.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_vertical_32.png"/>
-        <bt:Image id="Icon.GroupV.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_vertical_80.png"/>
+        <bt:Image id="Icon.GroupV.16" DefaultValue="https://localhost:3000/assets/group_vertical_16.png"/>
+        <bt:Image id="Icon.GroupV.32" DefaultValue="https://localhost:3000/assets/group_vertical_32.png"/>
+        <bt:Image id="Icon.GroupV.80" DefaultValue="https://localhost:3000/assets/group_vertical_80.png"/>
         <!-- Excel -->
-        <bt:Image id="Icon.Excel.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/export_excel_16.png"/>
-        <bt:Image id="Icon.Excel.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/export_excel_32.png"/>
-        <bt:Image id="Icon.Excel.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/export_excel_80.png"/>
+        <bt:Image id="Icon.Excel.16" DefaultValue="https://localhost:3000/assets/export_excel_16.png"/>
+        <bt:Image id="Icon.Excel.32" DefaultValue="https://localhost:3000/assets/export_excel_32.png"/>
+        <bt:Image id="Icon.Excel.80" DefaultValue="https://localhost:3000/assets/export_excel_80.png"/>
         <!-- Send -->
-        <bt:Image id="Icon.Send.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/send_as_16.png"/>
-        <bt:Image id="Icon.Send.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/send_as_32.png"/>
-        <bt:Image id="Icon.Send.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/send_as_80.png"/>
+        <bt:Image id="Icon.Send.16" DefaultValue="https://localhost:3000/assets/send_as_16.png"/>
+        <bt:Image id="Icon.Send.32" DefaultValue="https://localhost:3000/assets/send_as_32.png"/>
+        <bt:Image id="Icon.Send.80" DefaultValue="https://localhost:3000/assets/send_as_80.png"/>
       </bt:Images>
 
       <bt:Urls>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html"/>
-        <bt:Url id="Action.ConvertDots" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=convertToDots"/>
-        <bt:Url id="Action.SelectSimilar" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=selectSimilar"/>
-        <bt:Url id="Action.Swap" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=swapObjects"/>
-        <bt:Url id="Action.GroupH" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=groupHorizontal"/>
-        <bt:Url id="Action.GroupV" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=groupVertical"/>
-        <bt:Url id="Action.Export" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=exportToExcel"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Action.ConvertDots" DefaultValue="https://localhost:3000/taskpane.html?action=convertToDots"/>
+        <bt:Url id="Action.SelectSimilar" DefaultValue="https://localhost:3000/taskpane.html?action=selectSimilar"/>
+        <bt:Url id="Action.Swap" DefaultValue="https://localhost:3000/taskpane.html?action=swapObjects"/>
+        <bt:Url id="Action.GroupH" DefaultValue="https://localhost:3000/taskpane.html?action=groupHorizontal"/>
+        <bt:Url id="Action.GroupV" DefaultValue="https://localhost:3000/taskpane.html?action=groupVertical"/>
+        <bt:Url id="Action.Export" DefaultValue="https://localhost:3000/taskpane.html?action=exportToExcel"/>
       </bt:Urls>
 
       <bt:ShortStrings>
@@ -363,7 +363,7 @@
       </bt:LongStrings>
     </Resources>
 
-    <ExtendedOverrides Url="https://1183ventures.github.io/slideshortcuts-addin/extended-overrides.json"/>
+    <ExtendedOverrides Url="https://localhost:3000/extended-overrides.json"/>
 
   </VersionOverrides>
 </OfficeApp>
