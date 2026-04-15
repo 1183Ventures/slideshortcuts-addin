@@ -30,8 +30,8 @@
     {
       "action": "CycleHarveyBall",
       "key": {
-        "default": "Ctrl+Shift+H",
-        "mac": "Ctrl+Shift+H"
+        "default": "Alt+Shift+B",
+        "mac": "Alt+Shift+B"
       }
     },
     {

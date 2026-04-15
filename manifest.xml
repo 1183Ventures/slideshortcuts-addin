@@ -363,7 +363,7 @@
       </bt:LongStrings>
     </Resources>
 
-    <ExtendedOverrides Url="https://localhost:3000/extended-overrides.json"/>
+    <ExtendedOverrides Url="https://1183ventures.github.io/slideshortcuts-addin/extended-overrides.json"/>
 
     <!-- V1_1 nested inside V1_0 for keyboard shortcut support -->
     <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_1">
@@ -692,7 +692,7 @@
         </bt:LongStrings>
       </Resources>
 
-      <ExtendedOverrides Url="https://localhost:3000/extended-overrides.json"/>
+      <ExtendedOverrides Url="https://1183ventures.github.io/slideshortcuts-addin/extended-overrides.json"/>
 
     </VersionOverrides>
 
