@@ -73,8 +73,32 @@
     .btn-primary:active { background: #0A1220; }
     .status {
       font-size: 12px;
-      color: #888;
+      color: #F44336;
       margin-top: 8px;
       text-align: center;
+      font-weight: 500;
     }
-    #pane-container { display: none; }</style><script defer="defer" src="taskpane-win.bundle.js?v=5"></script></head><body><div id="pane-container"></div><div id="loading">Loading...</div></body></html>
+    #pane-container { display: none; }
+    #dbg { position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#0f0; font:11px monospace; padding:6px 8px; max-height:120px; overflow-y:auto; z-index:9999; border-top:2px solid #C4A35A; }
+    #dbg .err { color:#f44; }
+    #dbg .ok { color:#0f0; }
+    #dbg .info { color:#4af; }
+</style>
+<script>
+window._dbg = function(msg, cls) {
+  var d = document.getElementById('dbg');
+  if (!d) return;
+  var line = document.createElement('div');
+  line.className = cls || 'info';
+  line.textContent = '[' + new Date().toLocaleTimeString() + '] ' + msg;
+  d.appendChild(line);
+  d.scrollTop = d.scrollHeight;
+};
+window.onerror = function(msg, src, line, col, err) {
+  window._dbg('UNCAUGHT: ' + msg + ' @ line ' + line, 'err');
+};
+window.addEventListener('unhandledrejection', function(e) {
+  window._dbg('UNHANDLED PROMISE: ' + (e.reason && e.reason.message || e.reason), 'err');
+});
+</script>
+<script defer="defer" src="taskpane-win.bundle.js?v=7"></script></head><body><div id="pane-container"></div><div id="loading">Loading... (v7)</div><div id="dbg"><div class="info">== SlideShortcuts Debug Console v7 ==</div></div></body></html>
