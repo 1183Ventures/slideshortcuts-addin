@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+
+  <Id>07fc9551-d28c-44fb-830c-7b8b217af4a7</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>1183 Ventures LLC</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="SlideShortcuts"/>
+  <Description DefaultValue="PowerPoint shortcuts for alignment, formatting, and object manipulation."/>
+  <IconUrl DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_80.png"/>
+  <SupportUrl DefaultValue="https://slideshortcuts.com"/>
+
+  <Hosts>
+    <Host Name="Presentation"/>
+  </Hosts>
+
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html"/>
+  </DefaultSettings>
+
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Presentation">
+        <DesktopFormFactor>
+
+          <!-- Custom SlideShortcuts Tab -->
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="SlideShortcutsTab">
+
+              <!-- ===== INSERT GROUP ===== -->
+              <Group id="InsertGroup">
+                <Label resid="InsertGroupLabel"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.Symbol.16"/>
+                  <bt:Image size="32" resid="Icon.Symbol.32"/>
+                  <bt:Image size="80" resid="Icon.Symbol.80"/>
+                </Icon>
+
+                <Control xsi:type="Button" id="InsertSymbolBtn">
+                  <Label resid="InsertSymbolLabel"/>
+                  <Supertip>
+                    <Title resid="InsertSymbolLabel"/>
+                    <Description resid="InsertSymbolDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Symbol.16"/>
+                    <bt:Image size="32" resid="Icon.Symbol.32"/>
+                    <bt:Image size="80" resid="Icon.Symbol.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>SymbolPane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="InsertLineBtn">
+                  <Label resid="InsertLineLabel"/>
+                  <Supertip>
+                    <Title resid="InsertLineLabel"/>
+                    <Description resid="InsertLineDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Line.16"/>
+                    <bt:Image size="32" resid="Icon.Line.32"/>
+                    <bt:Image size="80" resid="Icon.Line.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>LinePane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="InsertIconBtn">
+                  <Label resid="InsertIconLabel"/>
+                  <Supertip>
+                    <Title resid="InsertIconLabel"/>
+                    <Description resid="InsertIconDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Icon.16"/>
+                    <bt:Image size="32" resid="Icon.Icon.32"/>
+                    <bt:Image size="80" resid="Icon.Icon.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>IconPane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="TextboxTableBtn">
+                  <Label resid="TextboxTableLabel"/>
+                  <Supertip>
+                    <Title resid="TextboxTableLabel"/>
+                    <Description resid="TextboxTableDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Table.16"/>
+                    <bt:Image size="32" resid="Icon.Table.32"/>
+                    <bt:Image size="80" resid="Icon.Table.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TablePane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+
+              <!-- ===== FORMAT GROUP ===== -->
+              <Group id="FormatGroup">
+                <Label resid="FormatGroupLabel"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.Dots.16"/>
+                  <bt:Image size="32" resid="Icon.Dots.32"/>
+                  <bt:Image size="80" resid="Icon.Dots.80"/>
+                </Icon>
+
+                <Control xsi:type="Button" id="ConvertToDotsBtn">
+                  <Label resid="ConvertToDotsLabel"/>
+                  <Supertip>
+                    <Title resid="ConvertToDotsLabel"/>
+                    <Description resid="ConvertToDotsDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Dots.16"/>
+                    <bt:Image size="32" resid="Icon.Dots.32"/>
+                    <bt:Image size="80" resid="Icon.Dots.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ActionPane</TaskpaneId>
+                    <SourceLocation resid="Action.ConvertDots"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="SelectSimilarBtn">
+                  <Label resid="SelectSimilarLabel"/>
+                  <Supertip>
+                    <Title resid="SelectSimilarLabel"/>
+                    <Description resid="SelectSimilarDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Similar.16"/>
+                    <bt:Image size="32" resid="Icon.Similar.32"/>
+                    <bt:Image size="80" resid="Icon.Similar.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ActionPane</TaskpaneId>
+                    <SourceLocation resid="Action.SelectSimilar"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="SwapObjectsBtn">
+                  <Label resid="SwapLabel"/>
+                  <Supertip>
+                    <Title resid="SwapLabel"/>
+                    <Description resid="SwapDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Swap.16"/>
+                    <bt:Image size="32" resid="Icon.Swap.32"/>
+                    <bt:Image size="80" resid="Icon.Swap.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ActionPane</TaskpaneId>
+                    <SourceLocation resid="Action.Swap"/>
+                  </Action>
+                </Control>
+              </Group>
+
+              <!-- ===== GROUP GROUP ===== -->
+              <Group id="GroupGroup">
+                <Label resid="GroupGroupLabel"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.GroupH.16"/>
+                  <bt:Image size="32" resid="Icon.GroupH.32"/>
+                  <bt:Image size="80" resid="Icon.GroupH.80"/>
+                </Icon>
+
+                <Control xsi:type="Button" id="GroupHorizontalBtn">
+                  <Label resid="GroupHorizontalLabel"/>
+                  <Supertip>
+                    <Title resid="GroupHorizontalLabel"/>
+                    <Description resid="GroupHorizontalDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.GroupH.16"/>
+                    <bt:Image size="32" resid="Icon.GroupH.32"/>
+                    <bt:Image size="80" resid="Icon.GroupH.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ActionPane</TaskpaneId>
+                    <SourceLocation resid="Action.GroupH"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="GroupVerticalBtn">
+                  <Label resid="GroupVerticalLabel"/>
+                  <Supertip>
+                    <Title resid="GroupVerticalLabel"/>
+                    <Description resid="GroupVerticalDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.GroupV.16"/>
+                    <bt:Image size="32" resid="Icon.GroupV.32"/>
+                    <bt:Image size="80" resid="Icon.GroupV.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ActionPane</TaskpaneId>
+                    <SourceLocation resid="Action.GroupV"/>
+                  </Action>
+                </Control>
+              </Group>
+
+              <!-- ===== EXPORT GROUP ===== -->
+              <Group id="ExportGroup">
+                <Label resid="ExportGroupLabel"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.Excel.16"/>
+                  <bt:Image size="32" resid="Icon.Excel.32"/>
+                  <bt:Image size="80" resid="Icon.Excel.80"/>
+                </Icon>
+
+                <Control xsi:type="Button" id="ExportToExcelBtn">
+                  <Label resid="ExportToExcelLabel"/>
+                  <Supertip>
+                    <Title resid="ExportToExcelLabel"/>
+                    <Description resid="ExportToExcelDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Excel.16"/>
+                    <bt:Image size="32" resid="Icon.Excel.32"/>
+                    <bt:Image size="80" resid="Icon.Excel.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ActionPane</TaskpaneId>
+                    <SourceLocation resid="Action.Export"/>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="SendAsBtn">
+                  <Label resid="SendAsLabel"/>
+                  <Supertip>
+                    <Title resid="SendAsLabel"/>
+                    <Description resid="SendAsDesc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.Send.16"/>
+                    <bt:Image size="32" resid="Icon.Send.32"/>
+                    <bt:Image size="80" resid="Icon.Send.80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>SendPane</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+
+              <Label resid="TabLabel"/>
+            </CustomTab>
+          </ExtensionPoint>
+
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <!-- Symbol -->
+        <bt:Image id="Icon.Symbol.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_16.png"/>
+        <bt:Image id="Icon.Symbol.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_32.png"/>
+        <bt:Image id="Icon.Symbol.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_symbol_80.png"/>
+        <!-- Line -->
+        <bt:Image id="Icon.Line.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_line_16.png"/>
+        <bt:Image id="Icon.Line.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_line_32.png"/>
+        <bt:Image id="Icon.Line.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_line_80.png"/>
+        <!-- Icon -->
+        <bt:Image id="Icon.Icon.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_icon_16.png"/>
+        <bt:Image id="Icon.Icon.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_icon_32.png"/>
+        <bt:Image id="Icon.Icon.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/insert_icon_80.png"/>
+        <!-- Table -->
+        <bt:Image id="Icon.Table.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/textbox_table_16.png"/>
+        <bt:Image id="Icon.Table.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/textbox_table_32.png"/>
+        <bt:Image id="Icon.Table.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/textbox_table_80.png"/>
+        <!-- Dots -->
+        <bt:Image id="Icon.Dots.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/convert_dots_16.png"/>
+        <bt:Image id="Icon.Dots.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/convert_dots_32.png"/>
+        <bt:Image id="Icon.Dots.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/convert_dots_80.png"/>
+        <!-- Similar -->
+        <bt:Image id="Icon.Similar.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/select_similar_16.png"/>
+        <bt:Image id="Icon.Similar.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/select_similar_32.png"/>
+        <bt:Image id="Icon.Similar.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/select_similar_80.png"/>
+        <!-- Swap -->
+        <bt:Image id="Icon.Swap.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/swap_objects_16.png"/>
+        <bt:Image id="Icon.Swap.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/swap_objects_32.png"/>
+        <bt:Image id="Icon.Swap.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/swap_objects_80.png"/>
+        <!-- Group Horizontal -->
+        <bt:Image id="Icon.GroupH.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_horizontal_16.png"/>
+        <bt:Image id="Icon.GroupH.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_horizontal_32.png"/>
+        <bt:Image id="Icon.GroupH.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_horizontal_80.png"/>
+        <!-- Group Vertical -->
+        <bt:Image id="Icon.GroupV.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_vertical_16.png"/>
+        <bt:Image id="Icon.GroupV.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_vertical_32.png"/>
+        <bt:Image id="Icon.GroupV.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/group_vertical_80.png"/>
+        <!-- Excel -->
+        <bt:Image id="Icon.Excel.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/export_excel_16.png"/>
+        <bt:Image id="Icon.Excel.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/export_excel_32.png"/>
+        <bt:Image id="Icon.Excel.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/export_excel_80.png"/>
+        <!-- Send -->
+        <bt:Image id="Icon.Send.16" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/send_as_16.png"/>
+        <bt:Image id="Icon.Send.32" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/send_as_32.png"/>
+        <bt:Image id="Icon.Send.80" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/assets/send_as_80.png"/>
+      </bt:Images>
+
+      <bt:Urls>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html"/>
+        <bt:Url id="Action.ConvertDots" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=convertToDots"/>
+        <bt:Url id="Action.SelectSimilar" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=selectSimilar"/>
+        <bt:Url id="Action.Swap" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=swapObjects"/>
+        <bt:Url id="Action.GroupH" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=groupHorizontal"/>
+        <bt:Url id="Action.GroupV" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=groupVertical"/>
+        <bt:Url id="Action.Export" DefaultValue="https://1183ventures.github.io/slideshortcuts-addin/taskpane.html?action=exportToExcel"/>
+      </bt:Urls>
+
+      <bt:ShortStrings>
+        <bt:String id="TabLabel" DefaultValue="SlideShortcuts"/>
+        <!-- Groups -->
+        <bt:String id="InsertGroupLabel" DefaultValue="Insert"/>
+        <bt:String id="FormatGroupLabel" DefaultValue="Format"/>
+        <bt:String id="GroupGroupLabel" DefaultValue="Group"/>
+        <bt:String id="ExportGroupLabel" DefaultValue="Export"/>
+        <!-- Button Labels -->
+        <bt:String id="InsertSymbolLabel" DefaultValue="Symbol"/>
+        <bt:String id="InsertLineLabel" DefaultValue="Line"/>
+        <bt:String id="InsertIconLabel" DefaultValue="Icon"/>
+        <bt:String id="TextboxTableLabel" DefaultValue="Textbox Table"/>
+        <bt:String id="ConvertToDotsLabel" DefaultValue="Convert to Dots"/>
+        <bt:String id="SelectSimilarLabel" DefaultValue="Select Similar"/>
+        <bt:String id="SwapLabel" DefaultValue="Swap"/>
+        <bt:String id="GroupHorizontalLabel" DefaultValue="Group Rows"/>
+        <bt:String id="GroupVerticalLabel" DefaultValue="Group Cols"/>
+        <bt:String id="ExportToExcelLabel" DefaultValue="Export to Excel"/>
+        <bt:String id="SendAsLabel" DefaultValue="Send As"/>
+      </bt:ShortStrings>
+
+      <bt:LongStrings>
+        <bt:String id="InsertSymbolDesc" DefaultValue="Insert check marks, arrows, and other common symbols."/>
+        <bt:String id="InsertLineDesc" DefaultValue="Insert default lines, arrows, and dividers."/>
+        <bt:String id="InsertIconDesc" DefaultValue="Browse and insert from 250+ business icons."/>
+        <bt:String id="TextboxTableDesc" DefaultValue="Create a grid of textboxes with configurable rows, columns, and dividers."/>
+        <bt:String id="ConvertToDotsDesc" DefaultValue="Replace all text in selected shapes with '...' placeholders."/>
+        <bt:String id="SelectSimilarDesc" DefaultValue="Select all shapes matching the first selected shape's fill, outline, and type."/>
+        <bt:String id="SwapDesc" DefaultValue="Swap the positions of exactly 2 selected shapes."/>
+        <bt:String id="GroupHorizontalDesc" DefaultValue="Auto-detect rows of shapes and group each row together."/>
+        <bt:String id="GroupVerticalDesc" DefaultValue="Auto-detect columns of shapes and group each column together."/>
+        <bt:String id="ExportToExcelDesc" DefaultValue="Copy selected shapes' text to clipboard as tab-delimited data for Excel."/>
+        <bt:String id="SendAsDesc" DefaultValue="Export and send the presentation as PDF or PPTX via email."/>
+      </bt:LongStrings>
+    </Resources>
+
+    <ExtendedOverrides Url="https://1183ventures.github.io/slideshortcuts-addin/extended-overrides.json"/>
+
+  </VersionOverrides>
+</OfficeApp>

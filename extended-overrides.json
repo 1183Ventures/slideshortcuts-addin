@@ -1,0 +1,18 @@
+{
+  "actions": [
+    {
+      "id": "CycleHarveyBall",
+      "type": "ExecuteFunction",
+      "functionName": "cycleHarveyBall"
+    }
+  ],
+  "shortcuts": [
+    {
+      "action": "CycleHarveyBall",
+      "key": {
+        "default": "Ctrl+Shift+H",
+        "mac": "Ctrl+Shift+H"
+      }
+    }
+  ]
+}
